@@ -1,0 +1,68 @@
+# ── Misc ──
+.symlinks
+.ignore/
+
+# ── Dependencies ──
+node_modules/
+vendor/
+
+# ── Build output ──
+build/
+dist/
+
+# ── PHP — general ──
+# Track phpstan.neon.dist instead
+phpstan.neon
+
+# ── JavaScript / TypeScript / Node ──
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+.npm/
+tsconfig.tsbuildinfo
+.deno/
+.deno_task_cache/
+
+# ── Archives & databases ──
+*.zip
+*.tar.gz
+*.sql
+*.diff
+*.err
+*.rej
+*.vi
+
+# ── OS files ──
+.DS_Store
+Thumbs.db
+._*
+*.orig
+
+# ── Editor / IDE ──
+.idea/
+.vscode/
+.komodotools
+*.komodoproject
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+
+# ── Temp / cache / backup ──
+*.tmp
+*.cache
+*.log
+*.bak
+
+# ── Env ──
+.env
+.env.local
+.env.*.local

@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       NGT Bootstrap Icons (2000+)
+ * Plugin Name:       nextgenthemes-icons
  * Plugin URI:        https://github.com/nextgenthemes/nextgenthemes-icons
  * Description:       Registers the Bootstrap Icons collection with WordPress.
  * Version:           1.0.0

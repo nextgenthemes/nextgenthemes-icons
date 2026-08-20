@@ -6,7 +6,7 @@
  * Version:           1.0.0
  * Requires at least: 7.1
  * Requires PHP:      8.1
- * Author:            NextGenThemes
+ * Author:            Nicolas Jonas
  * Author URI:        https://nextgenthemes.com
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
@@ -15,13 +15,12 @@
 
 declare(strict_types=1);
 
-namespace NextGenThemes\Icons;
+namespace Nextgenthemes\Icons;
 
 defined('ABSPATH') || exit;
 
 const PLUGIN_DIR = __DIR__;
 
-require_once PLUGIN_DIR . '/src/bootstrap-icons-data.php';
 require_once PLUGIN_DIR . '/src/IconRegistrar.php';
 
 add_action('plugins_loaded', static function (): void {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace NextGenThemes\Icons;
+namespace Nextgenthemes\Icons;
 
 final class IconRegistrar {
 

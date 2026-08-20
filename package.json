@@ -1,0 +1,24 @@
+{
+	"name": "@nextgenthemes/nextgenthemes-icons",
+	"private": true,
+	"scripts": {
+		"test": "cd ../.. && phpunit --testsuite nextgenthemes-icons"
+	},
+	"description": "Registers the Bootstrap Icons collection with WordPress",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nextgenthemes/nextgenthemes-icons.git"
+	},
+	"keywords": [
+		"WordPress",
+		"icons",
+		"bootstrap",
+		"gutenberg"
+	],
+	"author": "Nicolas Jonas",
+	"license": "GPL-3.0-only",
+	"bugs": {
+		"url": "https://github.com/nextgenthemes/nextgenthemes-icons/issues"
+	},
+	"homepage": "https://nextgenthemes.com"
+}

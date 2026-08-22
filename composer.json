@@ -11,6 +11,12 @@
     "require": {
         "php": ">=8.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/nextgenthemes/nextgenthemes-icons.git"
+        }
+    ],
     "config": {
         "optimize-autoloader": true,
         "platform": {

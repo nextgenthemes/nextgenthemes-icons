@@ -1,7 +1,7 @@
 {
     "name": "nextgenthemes/nextgenthemes-icons",
     "description": "Icons collections for WordPress (2000+ Bootstrap icons)",
-    "type": "wp-plugin",
+    "type": "wordpress-plugin",
     "license": "GPL-3.0-only",
     "authors": [
         {

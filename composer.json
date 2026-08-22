@@ -1,0 +1,20 @@
+{
+    "name": "nextgenthemes/nextgenthemes-icons",
+    "description": "Icons collections for WordPress (2000+ Bootstrap icons)",
+    "type": "wp-plugin",
+    "license": "GPL-3.0-only",
+    "authors": [
+        {
+            "name": "Nicolas Jonas"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "platform": {
+            "php": "8.1"
+        }
+    }
+}

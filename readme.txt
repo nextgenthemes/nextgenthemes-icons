@@ -9,18 +9,20 @@ Stable tag: 1.0.1.1
 License: GPL-3.0
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Registers popular icon sets in WordPress. Bootstrap Icons for WordPress, Phosphor Icons for WordPress.
+Popular icon sets for WordPress. Bootstrap Icons for WordPress, Phosphor Icons for WordPress.
 
 ## Description
 
-* Registers 3rd party Icon sets in WordPress.
+* Registers 3rd party icon sets in WordPress.
 * Use them in the Block Editor with the Icon Block or with `wp_get_icon` in PHP code.
-* More icon sets will be added as separate collections in the future.
+* More icon sets will be added as in the future.
 
 ### Icon Sets
 
 * [2078 Bootstrap Icons](https://icons.getbootstrap.com/)
 * [Phosphor ](https://phosphoricons.com/)
+
+Phosphor icons are currently limited categories by the fact that WP does not really fully support SVG yes. See [ticket/65795](https://core.trac.wordpress.org/ticket/65795)
 
 ## Installation
 

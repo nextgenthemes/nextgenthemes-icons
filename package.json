@@ -2,7 +2,7 @@
 	"name": "@nextgenthemes/nextgenthemes-icons",
 	"private": true,
 	"scripts": {
-		"build": "echo ''",
+		"build": "nu bin/compile-icons.nu",
 		"test": "cd ../.. && phpunit --testsuite nextgenthemes-icons"
 	},
 	"description": "Registers the Bootstrap Icons collection with WordPress",

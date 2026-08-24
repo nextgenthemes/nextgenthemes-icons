@@ -10,7 +10,7 @@ class Tests_Icon_Data extends WP_UnitTestCase {
 
 	public static function setUpBeforeClass(): void {
 		parent::setUpBeforeClass();
-		self::$icons = require PLUGIN_DIR . '/src/bootstrap-icons-data.php';
+		self::$icons = require PLUGIN_DIR . '/src/data/bootstrap.php';
 	}
 
 	public function test_icon_data_is_array(): void {
@@ -28,17 +28,14 @@ class Tests_Icon_Data extends WP_UnitTestCase {
 		}
 	}
 
-	public function test_each_icon_has_categories(): void {
+	public function test_each_icon_has_only_supported_keys(): void {
 		foreach ( self::$icons as $slug => $data ) {
-			$this->assertArrayHasKey( 'categories', $data, "Icon '$slug' missing categories" );
-			$this->assertIsArray( $data['categories'], "Icon '$slug' categories is not array" );
-		}
-	}
-
-	public function test_each_icon_has_tags(): void {
-		foreach ( self::$icons as $slug => $data ) {
-			$this->assertArrayHasKey( 'tags', $data, "Icon '$slug' missing tags" );
-			$this->assertIsArray( $data['tags'], "Icon '$slug' tags is not array" );
+			$this->assertIsArray( $data, "Icon '$slug' data is not an array" );
+			$this->assertSame(
+				[ 'title' ],
+				array_keys( $data ),
+				"Icon '$slug' has unexpected data keys"
+			);
 		}
 	}
 

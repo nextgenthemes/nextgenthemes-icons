@@ -6,16 +6,16 @@ class Tests_Icon_Registration extends WP_UnitTestCase {
 
 	public function test_bootstrap_collection_registered(): void {
 		$registry = WP_Icon_Collections_Registry::get_instance();
-		$collection = $registry->get_registered( 'bootstrap-icons' );
+		$collection = $registry->get_registered( 'bootstrap' );
 
-		$this->assertNotNull( $collection, 'bootstrap-icons collection not registered' );
+		$this->assertNotNull( $collection, 'bootstrap collection not registered' );
 		$this->assertSame( 'Bootstrap', $collection['label'] );
 	}
 
 	public function test_icons_registered_in_registry(): void {
 		$registry = WP_Icons_Registry::get_instance();
 
-		$icons = $registry->get_registered_icons( 'bootstrap-icons/' );
+		$icons = $registry->get_registered_icons( 'bootstrap/' );
 		$this->assertGreaterThan( 2000, count( $icons ) );
 	}
 
@@ -24,7 +24,7 @@ class Tests_Icon_Registration extends WP_UnitTestCase {
 	 */
 	public function test_specific_icon_registered( string $slug ): void {
 		$registry = WP_Icons_Registry::get_instance();
-		$name = 'bootstrap-icons/' . $slug;
+		$name = 'bootstrap/' . $slug;
 
 		$this->assertTrue( $registry->is_registered( $name ), "Icon '$name' not registered" );
 	}
@@ -44,7 +44,7 @@ class Tests_Icon_Registration extends WP_UnitTestCase {
 
 	public function test_registered_icon_has_label(): void {
 		$registry = WP_Icons_Registry::get_instance();
-		$icon = $registry->get_registered_icon( 'bootstrap-icons/gear' );
+		$icon = $registry->get_registered_icon( 'bootstrap/gear' );
 
 		$this->assertNotNull( $icon );
 		$this->assertSame( 'Gear', $icon['label'] );
@@ -52,15 +52,15 @@ class Tests_Icon_Registration extends WP_UnitTestCase {
 
 	public function test_registered_icon_has_collection(): void {
 		$registry = WP_Icons_Registry::get_instance();
-		$icon = $registry->get_registered_icon( 'bootstrap-icons/gear' );
+		$icon = $registry->get_registered_icon( 'bootstrap/gear' );
 
 		$this->assertNotNull( $icon );
-		$this->assertSame( 'bootstrap-icons', $icon['collection'] );
+		$this->assertSame( 'bootstrap', $icon['collection'] );
 	}
 
 	public function test_registered_icon_has_file_path(): void {
 		$registry = WP_Icons_Registry::get_instance();
-		$icon = $registry->get_registered_icon( 'bootstrap-icons/gear' );
+		$icon = $registry->get_registered_icon( 'bootstrap/gear' );
 
 		$this->assertNotNull( $icon );
 		$this->assertArrayHasKey( 'file_path', $icon );
@@ -69,7 +69,7 @@ class Tests_Icon_Registration extends WP_UnitTestCase {
 
 	public function test_icon_content_loads_svg(): void {
 		$registry = WP_Icons_Registry::get_instance();
-		$icon = $registry->get_registered_icon( 'bootstrap-icons/gear' );
+		$icon = $registry->get_registered_icon( 'bootstrap/gear' );
 
 		$this->assertNotNull( $icon );
 		$this->assertStringStartsWith( '<svg', $icon['content'] );

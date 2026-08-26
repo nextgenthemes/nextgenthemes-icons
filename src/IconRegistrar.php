@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Nextgenthemes\Icons;
 
@@ -10,8 +10,9 @@ final class IconRegistrar {
 	private const DATA_DIR  = PLUGIN_DIR . '/src/data';
 
 	public function boot(): void {
-		add_action( 'init', $this->register(...) );
+		add_action( 'init', $this->register( ... ) );
 	}
+
 	private static function get_collections(): array {
 
 		// NOTE: Collections commented out below lose >70% of their icons to the
@@ -20,34 +21,34 @@ final class IconRegistrar {
 		// Uncomment as soon as WordPress sanitizes these tags/attributes:
 		// circle/ellipse/g/line/polyline/rect + stroke*/opacity/fill-opacity.
 		return [
-			'bootstrap'         => [
+			'bootstrap' => [
 				'label'       => __( 'Bootstrap', 'nextgenthemes-icons' ),
 				'description' => __( '2,000+ Bootstrap Icons.', 'nextgenthemes-icons' ),
 				'path'        => self::ICONS_DIR . '/bootstrap',
 			],
 			// 'phosphor-thin'     => [
-			// 	'label' => __( 'Phosphor Thin', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs/thin',
+			//  'label' => __( 'Phosphor Thin', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs/thin',
 			// ],
 			// 'phosphor-light'    => [
-			// 	'label' => __( 'Phosphor Light', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs/light',
+			//  'label' => __( 'Phosphor Light', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs/light',
 			// ],
 			// 'phosphor-regular'  => [
-			// 	'label' => __( 'Phosphor Regular', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs/regular',
+			//  'label' => __( 'Phosphor Regular', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs/regular',
 			// ],
-			'phosphor-fill'     => [
+			'phosphor-fill' => [
 				'label' => __( 'Phosphor Fill', 'nextgenthemes-icons' ),
 				'path'  => self::ICONS_DIR . '/phosphor/svgs/fill',
 			],
 			// 'phosphor-bold'     => [
-			// 	'label' => __( 'Phosphor Bold', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs/bold',
+			//  'label' => __( 'Phosphor Bold', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs/bold',
 			// ],
 			// 'phosphor-duotone'  => [
-			// 	'label' => __( 'Phosphor Duotone', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs/duotone',
+			//  'label' => __( 'Phosphor Duotone', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs/duotone',
 			// ],
 			'phosphorflat-thin'    => [
 				'label' => __( 'Phosphor Flat Thin', 'nextgenthemes-icons' ),
@@ -70,8 +71,8 @@ final class IconRegistrar {
 				'path'  => self::ICONS_DIR . '/phosphor/svgs-flat/bold',
 			],
 			// 'phosphorflat-duotone' => [
-			// 	'label' => __( 'Phosphor Flat Duotone', 'nextgenthemes-icons' ),
-			// 	'path'  => self::ICONS_DIR . '/phosphor/svgs-flat/duotone',
+			//  'label' => __( 'Phosphor Flat Duotone', 'nextgenthemes-icons' ),
+			//  'path'  => self::ICONS_DIR . '/phosphor/svgs-flat/duotone',
 			// ],
 		];
 	}

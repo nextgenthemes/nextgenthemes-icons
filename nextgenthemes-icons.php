@@ -13,16 +13,19 @@
  * Text Domain:       nextgenthemes-icons
  */
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace Nextgenthemes\Icons;
 
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 
 const PLUGIN_DIR = __DIR__;
 
 require_once PLUGIN_DIR . '/src/IconRegistrar.php';
 
-add_action('plugins_loaded', static function (): void {
-	(new IconRegistrar())->boot();
-});
+add_action(
+	'plugins_loaded',
+	static function (): void {
+		( new IconRegistrar() )->boot();
+	}
+);

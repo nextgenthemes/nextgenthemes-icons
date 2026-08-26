@@ -1,6 +1,6 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 use const Nextgenthemes\Icons\PLUGIN_DIR;
 
@@ -41,7 +41,7 @@ class Tests_Icon_Data extends WP_UnitTestCase {
 
 	public function test_icon_slugs_are_strings(): void {
 		foreach ( self::$icons as $slug => $data ) {
-			$this->assertTrue( is_int( $slug ) || is_string( $slug ), "Icon slug is neither int nor string" );
+			$this->assertTrue( is_int( $slug ) || is_string( $slug ), 'Icon slug is neither int nor string' );
 		}
 	}
 

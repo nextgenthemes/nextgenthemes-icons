@@ -2,7 +2,7 @@
 Contributors: nico23
 Donate link: https://nextgenthemes.com/donate
 Tags: icons, bootstrap, block editor, gutenberg
-Requires at least: 6.1
+Requires at least: 7.1
 Tested up to: 7.1
 Requires PHP: 8.1
 Stable tag: 1.1.0

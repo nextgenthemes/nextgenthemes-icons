@@ -1,4 +1,4 @@
-=== NGT Icon Collection (2000+ Bootstrap Icons, Phophor Icons) ===
+=== NGT Icon Collection (2000+ Bootstrap Icons, Phosphor Icons) ===
 Contributors: nico23
 Donate link: https://nextgenthemes.com/donate
 Tags: icons, bootstrap, block editor, gutenberg
@@ -36,6 +36,10 @@ Phosphor icons are currently limited categories by the fact that WP does not rea
 Yes. Future icon sets will be added as separate icon collections. Reach out if you like a specific icon set. But they have a license that is GPL compatible!
 
 ## Changelog
+
+### 2026-08-28 1.1.2
+
+* New: Added Banner
 
 ### 1.1.0
 

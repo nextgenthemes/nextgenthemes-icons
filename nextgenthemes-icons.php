@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       nextgenthemes-icons
+ * Plugin Name:       NGT Icon Collection (2000+ Bootstrap Icons, Phosphor Icons)
  * Plugin URI:        https://github.com/nextgenthemes/nextgenthemes-icons
  * Description:       Registers the Bootstrap Icons collection with WordPress.
  * Version:           1.1.1
@@ -10,7 +10,6 @@
  * Author URI:        https://nextgenthemes.com
  * License:           GPLv3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
- * Text Domain:       nextgenthemes-icons
  */
 
 declare(strict_types = 1);

@@ -10,6 +10,8 @@
 /package*.json export-ignore
 /tsconfig.json export-ignore
 
+/.wordpress-org/banner.html export-ignore
+
 build/* -diff
 
 * text eol=lf

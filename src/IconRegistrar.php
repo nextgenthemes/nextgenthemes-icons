@@ -76,6 +76,7 @@ final class IconRegistrar {
 			// ],
 		];
 	}
+
 	private function register(): void {
 
 		$phosphor = null;

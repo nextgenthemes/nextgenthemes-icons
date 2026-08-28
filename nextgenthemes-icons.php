@@ -3,7 +3,7 @@
  * Plugin Name:       NGT Icon Collection (2000+ Bootstrap Icons, Phosphor Icons)
  * Plugin URI:        https://github.com/nextgenthemes/nextgenthemes-icons
  * Description:       Registers the Bootstrap Icons collection with WordPress.
- * Version:           1.1.1
+ * Version:           1.1.2
  * Requires at least: 7.1
  * Requires PHP:      8.1
  * Author:            Nicolas Jonas
